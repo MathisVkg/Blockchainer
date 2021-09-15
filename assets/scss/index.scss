@@ -1,0 +1,63 @@
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+    background-color: #ffffff;
+    margin: 0;
+    transition: 0.5s ease-in-out;
+}
+
+
+.title {
+    text-align: center;
+    color: #000000;
+    margin-top: 15%;
+}
+
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.onDarkMode {
+    font-size: 1.2em;
+    float: right;
+    margin-right: 20px;
+    margin-top: 20px;
+    transition: 0.3s ease-in-out;
+}
+
+.blackHover {
+    color: black;
+    transition: 0.3s ease-in-out;
+    &:hover {
+        transform: translateY(-3px);
+        background-color: #303030;
+        border-radius: 50px;
+        padding: 10px;
+        color: white;
+    }
+}
+
+.whiteHover {
+    color: white;
+    transition: 0.3s ease-in-out;
+    &:hover {
+        transform: translateY(-3px);
+        background-color: #ffffff;
+        border-radius: 50px;
+        padding: 10px;
+        color: #303030;
+    }
+}
+
+.offDarkMode {
+    display: none;
+}
+
+// .witheLogo {
+//     color: white;
+// }
+
