@@ -12,7 +12,6 @@ function getEthereum() {
     .then((res) => res.json())
     .then((ethereum) => {
         stockEthereum = ethereum;
-        console.log('ethereum', stockEthereum);
         getConvertEther()
         writeNamePriceEther();
         writeBlockEther();

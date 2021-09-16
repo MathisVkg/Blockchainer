@@ -1,21 +1,19 @@
 
 
 
-let headTag = document.head;
 let data;
-
-function callMeta() {
+function callScript() {
     data = {
-        meta1: '<meta charset="UTF-8">',
-        meta2: '<meta http-equiv="X-UA-Compatible" content="IE=edge">',
-        meta3: '<meta name="viewport" content="width=device-width, initial-scale=1.0">',
-        test: 'check',
+        bitcoin: '<script src="assets/js/callAPI/bitcoin.js"></script>',
+        ethereum: '<script src="assets/js/callAPI/ethereum.js"></script>',
+        dogecoin: '<script src="assets/js/callAPI/dogecoin.js"></script>',
+        fontawesome : '<script src="https://kit.fontawesome.com/9c212cc3e9.js" crossorigin="anonymous"></script>',
     }
-    // headTag.appendChild(data.test);
-    // document.getElementsByTagName('head')[0].appendChild(data.test);
-    // headTag.appendChild(data.test);
-    document.head.appendChild(data.test);    
+    console.log(data.bitcoin);
+    document.write(data.bitcoin);
+    document.write(data.ethereum);
+    document.write(data.dogecoin);
+    document.write(data.fontawesome);
 }
-
-callMeta();
+callScript();
 

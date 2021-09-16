@@ -91,6 +91,19 @@ nav .navButtonFirst {
   color: #6f86d6;
 }
 
+nav .navButtonLast {
+  margin-top: 70px;
+  margin-left: 25px;
+  font-size: 22px;
+  text-decoration: none;
+  transition: 0.3s ease-in-out;
+}
+
+nav .navButtonLast:hover {
+  color: #6f86d6;
+  transform: translateY(-4px);
+}
+
 nav .navButton {
   text-decoration: none;
   margin-left: 25px;
@@ -116,6 +129,10 @@ nav .navButton:hover {
   color: white;
 }
 
+.navDark .navButtonLast {
+  color: white;
+}
+
 .navWhite {
   background-color: white;
 }
@@ -125,6 +142,10 @@ nav .navButton:hover {
 }
 
 .navWhite .navButton {
+  color: black;
+}
+
+.navWhite .navButtonLast {
   color: black;
 }
 

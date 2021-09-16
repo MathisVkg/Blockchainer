@@ -1,7 +1,7 @@
 
 
 
-.dogecoin {
+.coinBlock {
     color: white;
     display: flex;
     flex-direction: column;
@@ -15,10 +15,6 @@
     .square {
         display: flex;
         margin-bottom: 15px;
-        .fa-btc {
-            font-size: 3em;
-            color: #f09a39;
-        }
         .namePrice {
             margin-left: 25px;
             .nameCrypto {
@@ -70,7 +66,7 @@
     }
 }
 
-.dogecoin:hover {
+.coinBlock:hover {
     // background-color: #3369b1;
     background-image: linear-gradient(to top, #48c6ef 0%, #6f86d6 100%);
     transform: translateY(-5px);

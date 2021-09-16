@@ -1,0 +1,25 @@
+
+
+
+.blockOne {
+    display: flex;
+    margin-left: 150px;
+    margin-top: 3%;
+    .namePrice {
+        display: flex;
+        flex-direction: column;
+        margin-left: 10px;
+        .price {
+            margin-top: 0;
+            font-size: 30px;
+        }
+        .bitcoinTitle {
+            
+            margin-bottom: 5px;
+            font-size: 40px;
+        }
+    }
+    .logo {
+        width: 100px;
+    }
+}

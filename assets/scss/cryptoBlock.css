@@ -1,4 +1,4 @@
-.ethereum {
+.coinBlock {
   color: white;
   display: flex;
   flex-direction: column;
@@ -11,90 +11,85 @@
   transition: 0.5s ease-in-out;
 }
 
-.ethereum .square {
+.coinBlock .square {
   display: flex;
   margin-bottom: 15px;
 }
 
-.ethereum .square .fa-ethereum {
-  font-size: 3em;
-  color: #f09a39;
-}
-
-.ethereum .square .namePrice {
+.coinBlock .square .namePrice {
   margin-left: 25px;
 }
 
-.ethereum .square .namePrice .nameCrypto {
+.coinBlock .square .namePrice .nameCrypto {
   margin-bottom: 5px;
 }
 
-.ethereum .square .namePrice .priceCrypto {
+.coinBlock .square .namePrice .priceCrypto {
   margin-top: 0;
 }
 
-.ethereum .blocksInfo {
+.coinBlock .blocksInfo {
   display: flex;
   justify-content: space-between;
 }
 
-.ethereum .blocksInfo .block {
+.coinBlock .blocksInfo .block {
   margin-top: 0;
   margin-bottom: 10px;
   color: #797979;
 }
 
-.ethereum .blocksInfo .valueBlock {
+.coinBlock .blocksInfo .valueBlock {
   margin-top: 0;
   margin-bottom: 10px;
 }
 
-.ethereum .transacInfo {
+.coinBlock .transacInfo {
   display: flex;
   justify-content: space-between;
 }
 
-.ethereum .transacInfo .transac {
+.coinBlock .transacInfo .transac {
   margin-top: 0;
   margin-bottom: 10px;
   color: #797979;
 }
 
-.ethereum .transacInfo .valueTransac {
+.coinBlock .transacInfo .valueTransac {
   margin-top: 0;
   margin-bottom: 10px;
 }
 
-.ethereum .blockchainSize {
+.coinBlock .blockchainSize {
   display: flex;
   justify-content: space-between;
 }
 
-.ethereum .blockchainSize .blockSize {
+.coinBlock .blockchainSize .blockSize {
   margin-top: 0;
   margin-bottom: 10px;
   color: #797979;
 }
 
-.ethereum .blockchainSize .valueBlockchainSize {
+.coinBlock .blockchainSize .valueBlockchainSize {
   margin-top: 0;
   margin-bottom: 10px;
 }
 
-.ethereum:hover {
+.coinBlock:hover {
   background-image: linear-gradient(to top, #48c6ef 0%, #6f86d6 100%);
   transform: translateY(-5px);
 }
 
-.ethereum:hover .block {
+.coinBlock:hover .block {
   color: #ffffff;
 }
 
-.ethereum:hover .transac {
+.coinBlock:hover .transac {
   color: #ffffff;
 }
 
-.ethereum:hover .blockSize {
+.coinBlock:hover .blockSize {
   color: #ffffff;
 }
 
@@ -102,4 +97,4 @@
   font-size: 0.8em;
   margin-right: 5px;
 }
-/*# sourceMappingURL=ethereum.css.map */
+/*# sourceMappingURL=cryptoBlock.css.map */

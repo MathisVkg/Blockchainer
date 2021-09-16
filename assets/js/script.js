@@ -8,7 +8,6 @@ let menuClose = document.getElementById('menuClose');
 let nav = document.getElementById('navTarget');
 let currentEur = 0.85;
 
-
 let state = 1;
 moon.addEventListener('click', () => {
     setTimeout(function(){
@@ -51,4 +50,5 @@ menuClose.addEventListener('click', () => {
     nav.classList.remove('on');
     nav.classList.add('off');
 })
+
 

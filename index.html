@@ -1,14 +1,11 @@
-<!-- <script src="assets/js/callData.js"></script> -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="assets/css/bitcoin.css" />
-<link rel="stylesheet" href="assets/css/ethereum.css" />
-<link rel="stylesheet" href="assets/css/dogecoin.css" />
 <link rel="stylesheet" href="assets/scss/index.css" />
+<link rel="stylesheet" href="assets/scss/cryptoBlock.css" />
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,400;1,500&display=swap" rel="stylesheet">
@@ -21,24 +18,21 @@
         <div class="colorNav">
             <i class="fas fa-angle-left" id="menuClose"></i>
             <p class="navButtonFirst">Explorer</p>
-            <a href="#" class="navButton">Bitcoin</a>
+            <a href="assets/elements/bitcoinHome.html" class="navButton">Bitcoin</a>
             <a href="#" class="navButton">Ethereum</a>
             <a href="#" class="navButton">Dogecoin</a>
+            <a href="index.html" class="navButtonLast">Home</a>
         </div>
     </nav>
     <i class="blackHover fas fa-moon" id="darkModeMoon"></i>
     <h2 class="title" id="title">Explore Blockchains</h2>
     <div class="container">
-        <div class="bitcoin" id="bitcoinTarget"></div>
-        <div class="ethereum" id="ethereumTarget"></div>
-        <div class="dogecoin" id="dogecoinTarget"></div>
+        <div class="coinBlock" id="bitcoinTarget"></div>
+        <div class="coinBlock" id="ethereumTarget"></div>
+        <div class="coinBlock" id="dogecoinTarget"></div>
     </div>
 
-
-    <script src="https://kit.fontawesome.com/9c212cc3e9.js" crossorigin="anonymous"></script>
-    <script src="assets/js/bitcoin.js"></script>
-    <script src="assets/js/ethereum.js"></script>
-    <script src="assets/js/dogecoin.js"></script>
+    <script src="assets/js/callData.js"></script>
     <script src="assets/js/script.js"></script>
 </body>
 </html>
