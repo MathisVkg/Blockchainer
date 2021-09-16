@@ -10,7 +10,7 @@ body {
 .title {
     text-align: center;
     color: #000000;
-    margin-top: 15%;
+    margin-top: 10%;
 }
 
 
@@ -20,14 +20,13 @@ body {
 }
 
 
-.onDarkMode {
-    float: right;
+.fa-moon {
+    position: fixed;
     font-size: 1.2em;
-    margin-right: 30px;
-    margin-top: 30px;
+    top: 20px;
+    left: 1870px;
     transition: 0.3s ease-in-out;
 }
-
 .blackHover {
     color: black;
     transition: 0.3s ease-in-out;
@@ -38,7 +37,6 @@ body {
         color: white;
     }
 }
-
 .whiteHover {
     color: white;
     transition: 0.3s ease-in-out;
@@ -50,8 +48,80 @@ body {
     }
 }
 
-.offDarkMode {
-    display: none;
+
+
+.fa-buffer {
+    margin-top: 20px;
+    margin-left: 20px;
+    font-size: 1.5em;
+}
+.on {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    transform: translateX(0);
+    transition: 0.3s ease-in-out;
+}
+.off {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    transform: translateX(-100%);
+    transition: 0.3s ease-in-out;
 }
 
+nav {
+    width: 12%;
+    .fa-angle-left {
+        font-size: 1.5em;
+        margin-left: 195px;
+        margin-top: 25px;
+    }
+    .navButtonFirst {
+        margin-left: 25px;
+        margin-top: 5px;
+        font-size: 35px;
+        color: #6f86d6;
+    }
+    .navButton {
+        text-decoration: none;
+        margin-left: 25px;
+        margin-bottom: 12px;
+        font-size: 22px;
+        transition: 0.3s ease-in-out;
+        &:hover {
+            color: #6f86d6;
+            transform: translateY(-4px);
+        }
+    }
+}
+.navDark {
+    background-color: #303030;
+    .fa-angle-left {
+        color: white;
+    }
+    .navButton {
+        color: white;
+    }
+}
+.navWhite {
+    background-color: white;
+    .fa-angle-left {
+        color: black;
+    }
+    .navButton {
+        color: black;
+    }
+}
 
+.colorNav {
+    display: flex;
+    flex-direction: column;
+    background-color: #6f86d6;
+    width: 2%;
+    height: 100vh;
+}

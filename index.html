@@ -1,13 +1,13 @@
-<?php require 'assets/api.php'?>
+<!-- <script src="assets/js/callData.js"></script> -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="assets/scss/bitcoin.css" />
-<link rel="stylesheet" href="assets/scss/ethereum.css" />
-<link rel="stylesheet" href="assets/scss/dogecoin.css" />
+<link rel="stylesheet" href="assets/css/bitcoin.css" />
+<link rel="stylesheet" href="assets/css/ethereum.css" />
+<link rel="stylesheet" href="assets/css/dogecoin.css" />
 <link rel="stylesheet" href="assets/scss/index.css" />
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,17 +16,23 @@
 <title>Blockchainer</title>
 </head>
 <body>
-    <i class="offDarkMode fas fa-sun" id="darkModeSun"></i>
-    <i class="onDarkMode blackHover fas fa-moon" id="darkModeMoon"></i>
+    <i class="blackHover fab fa-buffer" id="menuTarget"></i>
+    <nav class="off navDark" id="navTarget">
+        <div class="colorNav">
+            <i class="fas fa-angle-left" id="menuClose"></i>
+            <p class="navButtonFirst">Explorer</p>
+            <a href="#" class="navButton">Bitcoin</a>
+            <a href="#" class="navButton">Ethereum</a>
+            <a href="#" class="navButton">Dogecoin</a>
+        </div>
+    </nav>
+    <i class="blackHover fas fa-moon" id="darkModeMoon"></i>
     <h2 class="title" id="title">Explore Blockchains</h2>
     <div class="container">
         <div class="bitcoin" id="bitcoinTarget"></div>
         <div class="ethereum" id="ethereumTarget"></div>
         <div class="dogecoin" id="dogecoinTarget"></div>
     </div>
-
-
-    
 
 
     <script src="https://kit.fontawesome.com/9c212cc3e9.js" crossorigin="anonymous"></script>

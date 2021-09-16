@@ -3,31 +3,52 @@
 let moon = document.getElementById('darkModeMoon');
 let sun = document.getElementById('darkModeSun');
 let title = document.getElementById('title');
-let currentEur = 0.84;
+let menu = document.getElementById('menuTarget');
+let menuClose = document.getElementById('menuClose');
+let nav = document.getElementById('navTarget');
+let currentEur = 0.85;
 
+
+let state = 1;
 moon.addEventListener('click', () => {
     setTimeout(function(){
-        document.body.style.backgroundColor = '#303030';
-        title.style.color = 'white';
-        moon.classList.remove('onDarkMode');
-        moon.classList.remove('blackHover');
-        moon.classList.add('offDarkMode');
-        sun.classList.remove('offDarkMode');
-        sun.classList.add('onDarkMode');
-        sun.classList.add('whiteHover');
+        if(state === 1) {
+            document.body.style.backgroundColor = '#303030';
+            title.style.color = 'white';
+            moon.classList.remove('blackHover');
+            moon.classList.add('whiteHover');
+
+            menu.classList.remove('blackHover');
+            menu.classList.add('whiteHover');
+
+            nav.classList.remove('navDark');
+            nav.classList.add('navWhite');
+            state = 2;
+        } else {
+            document.body.style.backgroundColor = 'white';
+            title.style.color = 'black';
+            moon.classList.remove('whiteHover');
+            moon.classList.add('blackHover');
+
+            menu.classList.remove('whiteHover');
+            menu.classList.add('blackHover');
+
+            nav.classList.remove('navWhite');
+            nav.classList.add('navDark');
+            state = 1;
+        }
+
     }, 100);
 })
 
 
-sun.addEventListener('click', () => {
-    setTimeout(function(){
-        document.body.style.backgroundColor = 'white';
-        title.style.color = 'black';
-        sun.classList.remove('onDarkMode');
-        sun.classList.remove('whiteHover');
-        sun.classList.add('offDarkMode');
-        moon.classList.remove('offDarkMode');
-        moon.classList.add('onDarkMode');
-        moon.classList.add('blackHover');
-    }, 100);
+menu.addEventListener('click', () => {
+    nav.classList.remove('off');
+    nav.classList.add('on');
 })
+
+menuClose.addEventListener('click', () => {
+    nav.classList.remove('on');
+    nav.classList.add('off');
+})
+

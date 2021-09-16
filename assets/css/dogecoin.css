@@ -1,0 +1,105 @@
+.dogecoin {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  width: 280px;
+  background-color: #464545;
+  box-shadow: 0 0 15px #292929bf;
+  border-radius: 12px;
+  padding: 12px 25px;
+  margin: 10px;
+  transition: 0.5s ease-in-out;
+}
+
+.dogecoin .square {
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.dogecoin .square .fa-btc {
+  font-size: 3em;
+  color: #f09a39;
+}
+
+.dogecoin .square .namePrice {
+  margin-left: 25px;
+}
+
+.dogecoin .square .namePrice .nameCrypto {
+  margin-bottom: 5px;
+}
+
+.dogecoin .square .namePrice .priceCrypto {
+  margin-top: 0;
+}
+
+.dogecoin .blocksInfo {
+  display: flex;
+  justify-content: space-between;
+}
+
+.dogecoin .blocksInfo .block {
+  margin-top: 0;
+  margin-bottom: 10px;
+  color: #797979;
+}
+
+.dogecoin .blocksInfo .valueBlock {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.dogecoin .transacInfo {
+  display: flex;
+  justify-content: space-between;
+}
+
+.dogecoin .transacInfo .transac {
+  margin-top: 0;
+  margin-bottom: 10px;
+  color: #797979;
+}
+
+.dogecoin .transacInfo .valueTransac {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.dogecoin .blockchainSize {
+  display: flex;
+  justify-content: space-between;
+}
+
+.dogecoin .blockchainSize .blockSize {
+  margin-top: 0;
+  margin-bottom: 10px;
+  color: #797979;
+}
+
+.dogecoin .blockchainSize .valueBlockchainSize {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.dogecoin:hover {
+  background-image: linear-gradient(to top, #48c6ef 0%, #6f86d6 100%);
+  transform: translateY(-5px);
+}
+
+.dogecoin:hover .block {
+  color: #ffffff;
+}
+
+.dogecoin:hover .transac {
+  color: #ffffff;
+}
+
+.dogecoin:hover .blockSize {
+  color: #ffffff;
+}
+
+.fa-euro-sign {
+  font-size: 0.8em;
+  margin-right: 5px;
+}
+/*# sourceMappingURL=dogecoin.css.map */
