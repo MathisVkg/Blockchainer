@@ -4,7 +4,7 @@ const APIURLBITCOIN = 'https://api.blockchair.com/bitcoin/stats';
 let bitcoin = document.getElementById('bitcoinTarget');
 let stockBitcoin;
 let convertedPriceBitcoin;
-let currentEur = 0.84;
+let priceBitcoin;
 
 
 function getBitcoin() {
@@ -26,8 +26,9 @@ function writeNamePriceBitcoin() {
     let container = document.createElement('div');
     container.classList.add('square');
 
-    let logo = document.createElement('p');
-    logo.innerHTML = '<i class="fab fa-btc"></i>';
+    let logo = document.createElement('img');
+    logo.classList.add('logo');
+    logo.src = 'assets/img/bitcoin.svg';
 
     let squareName = document.createElement('div');
     squareName.classList.add('namePrice');
@@ -38,7 +39,7 @@ function writeNamePriceBitcoin() {
 
     let price = document.createElement('p');
     price.classList.add('priceCrypto');
-    price.innerHTML = '<i class="fas fa-euro-sign"></i>' + Math.round(convertedPriceBitcoin) + ' EUR';
+    price.innerHTML = '<i class="fas fa-euro-sign"></i>' + priceBitcoin + ' EUR';
 
     squareName.appendChild(name);
     squareName.appendChild(price);
@@ -102,6 +103,8 @@ function writeBockchainBitcoin() {
 function getConvertBitcoin() {
     convertedPriceBitcoin = stockBitcoin.data.market_price_usd;
     convertedPriceBitcoin *= currentEur;
+    Math.floor(convertedPriceBitcoin * 100) / 100;
+    priceBitcoin = convertedPriceBitcoin.toFixed(2);
 }
 
 

@@ -4,6 +4,8 @@ const APIURLETHEREUM = 'https://api.blockchair.com/ethereum/stats';
 let ethereum = document.getElementById('ethereumTarget');
 let stockEthereum;
 let convertedPriceEthereum;
+let priceEther;
+
 
 function getEthereum() {
     fetch(APIURLETHEREUM)
@@ -24,8 +26,9 @@ function writeNamePriceEther() {
     let container = document.createElement('div');
     container.classList.add('square');
 
-    let logo = document.createElement('p');
-    logo.innerHTML = '<i class="fab fa-ethereum"></i>';
+    let logo = document.createElement('img');
+    logo.classList.add('logo');
+    logo.src = 'assets/img/ethereum.svg';
 
     let squareName = document.createElement('div');
     squareName.classList.add('namePrice');
@@ -36,7 +39,7 @@ function writeNamePriceEther() {
 
     let price = document.createElement('p');
     price.classList.add('priceCrypto');
-    price.innerHTML = '<i class="fas fa-euro-sign"></i>' + Math.round(convertedPriceEthereum) + ' EUR';
+    price.innerHTML = '<i class="fas fa-euro-sign"></i>' + priceEther + ' EUR';
 
     squareName.appendChild(name);
     squareName.appendChild(price);
@@ -100,6 +103,8 @@ function writeBockchainEther() {
 function getConvertEther() {
     convertedPriceEthereum = stockEthereum.data.market_price_usd;
     convertedPriceEthereum *= currentEur;
+    Math.floor(convertedPriceEthereum * 100) / 100;
+    priceEther = convertedPriceEthereum.toFixed(2);
 }
 
 

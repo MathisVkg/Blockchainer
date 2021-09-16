@@ -1,0 +1,11 @@
+<svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M27.8335 55.0179C43.0235 55.0179 55.3335 42.7058 55.3335 27.5179C55.3335 12.3301 43.0235 0.0177047 27.8335 0.0179443C12.6435 0.0177209 0.333496 12.3277 0.333496 27.5177C0.333496 42.7077 12.6435 55.0179 27.8335 55.0179Z" fill="url(#g_logo-ethereum0)"/>
+    <path d="M37.788 28.9838L27.5608 41.7111L17.3335 28.9838L27.5608 13.0747L37.788 28.9838Z" stroke="#F4F4F4" stroke-width="2.8" stroke-miterlimit="10"/>
+    <path d="M17.3335 28.9839L27.5608 35.8021L37.788 28.9839" stroke="#F4F4F4" stroke-miterlimit="10"/>
+    <defs>
+        <linearGradient id="g_logo-ethereum0" x1="11.3335" y1="-0.925293" x2="38.8335" y2="52.9747" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#3C5A93"/>
+            <stop offset="1" stop-color="#D5D5D5"/>
+        </linearGradient>
+    </defs>
+</svg>

@@ -3,6 +3,7 @@
 let moon = document.getElementById('darkModeMoon');
 let sun = document.getElementById('darkModeSun');
 let title = document.getElementById('title');
+let currentEur = 0.84;
 
 moon.addEventListener('click', () => {
     setTimeout(function(){

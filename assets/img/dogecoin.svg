@@ -1,0 +1,11 @@
+<svg width="60" height="60" viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M20.3335 40.0179C31.3792 40.0179 40.3335 31.0636 40.3335 20.0179C40.3335 8.97225 31.3792 0.0179443 20.3335 0.0179443C9.2878 0.0179443 0.333496 8.97225 0.333496 20.0179C0.333496 31.0636 9.2878 40.0179 20.3335 40.0179Z" fill="url(#g_logo-dogecoin0)"/>
+    <path d="M20.128 28.1998H15.5825V11.8361H20.128C24.6462 11.8361 28.3098 15.4998 28.3098 20.0179C28.3098 24.5361 24.648 28.1998 20.128 28.1998Z" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+    <path d="M11.9463 20.0179H19.219" stroke="white" stroke-miterlimit="10"/>
+    <defs>
+        <linearGradient id="g_logo-dogecoin0" x1="40.3335" y1="46.4179" x2="10.3335" y2="4.01795" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#EBFF00"/>
+            <stop offset="1" stop-color="#FFAC70"/>
+        </linearGradient>
+    </defs>
+</svg>
