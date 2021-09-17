@@ -5,6 +5,7 @@ let bitcoin = document.getElementById('bitcoinTarget');
 let convertedPriceBitcoin;
 let priceBitcoin;
 let stockBitcoin;
+let resultPriceBitcoin;
 
 
 function getBitcoin() {
@@ -39,7 +40,7 @@ function writeNamePriceBitcoin() {
 
     let price = document.createElement('p');
     price.classList.add('priceCrypto');
-    price.innerHTML = '<i class="fas fa-euro-sign"></i>' + priceBitcoin + ' EUR';
+    price.innerHTML = '<i class="fas fa-euro-sign"></i>' + resultPriceBitcoin + ' EUR';
 
     squareName.appendChild(name);
     squareName.appendChild(price);
@@ -105,6 +106,7 @@ function getConvertBitcoin() {
     convertedPriceBitcoin *= currentEur;
     Math.floor(convertedPriceBitcoin * 100) / 100;
     priceBitcoin = convertedPriceBitcoin.toFixed(2);
+    resultPriceBitcoin = new Intl.NumberFormat().format(priceBitcoin);
 }
 
 

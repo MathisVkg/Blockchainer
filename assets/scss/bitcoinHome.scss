@@ -23,3 +23,73 @@
         width: 100px;
     }
 }
+
+.priceWhite {
+    color: white;
+}
+.priceDark {
+    color: black;
+}
+
+.containerTitle {
+    display: flex;
+    .titleBlock {
+        margin-top: 50px;
+        margin-left: 150px;
+        margin-bottom: 10px;
+    }
+    .marginTitle {
+        margin-left: 490px;
+    }
+}
+
+
+.containerAll {
+    display: flex;
+    .titleInfo {
+        display: flex;
+        flex-direction: column;
+        color: #6f86d6;
+        .blockText {
+            margin-top: 0;
+            margin-bottom: 15px;
+        }
+    }
+    .textData {
+        display: flex;
+        flex-direction: column;
+        .textData {
+            margin-top: 0;
+            margin-bottom: 15px;
+        }
+    }
+}
+
+.containerMeenpool {
+    margin-left: 180px;
+    margin-top: 5px;
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.containerBlock {
+    margin-left: 150px;
+    margin-top: 5px;
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.titleBlockWhite {
+    color: white;
+}
+.titleBlockDark {
+    color: black;
+}
+.containerBlockWhite {
+    color: black;
+}
+.containerBlockDark {
+    color: white;
+}

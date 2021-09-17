@@ -30,4 +30,105 @@
 .blockOne .logo {
   width: 100px;
 }
+
+.priceWhite {
+  color: white;
+}
+
+.priceDark {
+  color: black;
+}
+
+.containerTitle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.containerTitle .titleBlock {
+  margin-top: 50px;
+  margin-left: 150px;
+  margin-bottom: 10px;
+}
+
+.containerTitle .marginTitle {
+  margin-left: 490px;
+}
+
+.containerAll {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.containerAll .titleInfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: #6f86d6;
+}
+
+.containerAll .titleInfo .blockText {
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+.containerAll .textData {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.containerAll .textData .textData {
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+.containerMeenpool {
+  margin-left: 180px;
+  margin-top: 5px;
+  width: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.containerBlock {
+  margin-left: 150px;
+  margin-top: 5px;
+  width: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.titleBlockWhite {
+  color: white;
+}
+
+.titleBlockDark {
+  color: black;
+}
+
+.containerBlockWhite {
+  color: black;
+}
+
+.containerBlockDark {
+  color: white;
+}
 /*# sourceMappingURL=bitcoinHome.css.map */

@@ -76,8 +76,8 @@ body {
   height: 100vh;
   -webkit-transform: translateX(0);
           transform: translateX(0);
-  -webkit-transition: 0.3s ease-in-out;
-  transition: 0.3s ease-in-out;
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
 }
 
 .off {
@@ -87,55 +87,49 @@ body {
   height: 100vh;
   -webkit-transform: translateX(-150%);
           transform: translateX(-150%);
-  -webkit-transition: 0.3s ease-in-out;
-  transition: 0.3s ease-in-out;
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
 }
 
 nav {
-  width: 20%;
+  width: 15%;
+  z-index: 1;
 }
 
 nav .fa-angle-left {
   font-size: 1.5em;
-  margin-left: 195px;
+  margin-left: 165px;
   margin-top: 25px;
 }
 
 nav .navButtonFirst {
-  margin-left: 25px;
+  margin-left: 35px;
   margin-top: 5px;
-  font-size: 35px;
+  font-size: 22px;
   color: #6f86d6;
 }
 
 nav .navButtonLast {
   margin-top: 70px;
   margin-left: 25px;
-  font-size: 22px;
+  font-size: 17px;
   text-decoration: none;
+  padding: 7px 15px;
+  width: 146px;
+  border-radius: 4px 0 0 4px;
   -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
-}
-
-nav .navButtonLast:hover {
-  color: #6f86d6;
-  -webkit-transform: translateY(-4px);
-          transform: translateY(-4px);
 }
 
 nav .navButton {
   text-decoration: none;
   margin-left: 25px;
-  margin-bottom: 12px;
-  font-size: 22px;
+  font-size: 17px;
+  padding: 7px 15px;
+  width: 146px;
+  border-radius: 4px 0 0 4px;
   -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
-}
-
-nav .navButton:hover {
-  color: #6f86d6;
-  -webkit-transform: translateY(-4px);
-          transform: translateY(-4px);
 }
 
 .navDark {
@@ -150,8 +144,22 @@ nav .navButton:hover {
   color: white;
 }
 
+.navDark .navButton:hover {
+  background-color: white;
+  color: black;
+  -webkit-transform: translateX(-4px);
+          transform: translateX(-4px);
+}
+
 .navDark .navButtonLast {
   color: white;
+}
+
+.navDark .navButtonLast:hover {
+  background-color: white;
+  color: black;
+  -webkit-transform: translateX(-4px);
+          transform: translateX(-4px);
 }
 
 .navWhite {
@@ -166,8 +174,22 @@ nav .navButton:hover {
   color: black;
 }
 
+.navWhite .navButton:hover {
+  background-color: #303030;
+  color: white;
+  -webkit-transform: translateX(-4px);
+          transform: translateX(-4px);
+}
+
 .navWhite .navButtonLast {
   color: black;
+}
+
+.navWhite .navButtonLast:hover {
+  background-color: #303030;
+  color: white;
+  -webkit-transform: translateX(-4px);
+          transform: translateX(-4px);
 }
 
 .colorNav {

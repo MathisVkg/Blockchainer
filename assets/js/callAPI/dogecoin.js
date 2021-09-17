@@ -5,7 +5,7 @@ let dogecoin = document.getElementById('dogecoinTarget');
 let convertedPriceDogecoin;
 let priceDogecoin;
 let stockDogecoin;
-
+let resultPriceDoge;
 
 function getDogecoin() {
     fetch(APIURLDOGECOIN)
@@ -39,7 +39,7 @@ function writeNamePriceDogecoin() {
 
     let price = document.createElement('p');
     price.classList.add('priceCrypto');
-    price.innerHTML = '<i class="fas fa-euro-sign"></i>' + priceDogecoin + ' EUR';
+    price.innerHTML = '<i class="fas fa-euro-sign"></i>' + resultPriceDoge + ' EUR';
 
     squareName.appendChild(name);
     squareName.appendChild(price);
@@ -105,6 +105,7 @@ function getConvertDogecoin() {
     convertedPriceDogecoin *= currentEur;
     Math.floor(convertedPriceDogecoin * 100) / 100;
     priceDogecoin = convertedPriceDogecoin.toFixed(2);
+    resultPriceDoge = new Intl.NumberFormat().format(priceDogecoin);
 }
 
 

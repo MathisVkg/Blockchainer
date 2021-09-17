@@ -5,6 +5,7 @@ let ethereum = document.getElementById('ethereumTarget');
 let convertedPriceEthereum;
 let priceEther;
 let stockEthereum;
+let resultPriceEther;
 
 function getEthereum() {
     fetch(APIURLETHEREUM)
@@ -37,7 +38,7 @@ function writeNamePriceEther() {
 
     let price = document.createElement('p');
     price.classList.add('priceCrypto');
-    price.innerHTML = '<i class="fas fa-euro-sign"></i>' + priceEther + ' EUR';
+    price.innerHTML = '<i class="fas fa-euro-sign"></i>' + resultPriceEther + ' EUR';
 
     squareName.appendChild(name);
     squareName.appendChild(price);
@@ -103,6 +104,7 @@ function getConvertEther() {
     convertedPriceEthereum *= currentEur;
     Math.floor(convertedPriceEthereum * 100) / 100;
     priceEther = convertedPriceEthereum.toFixed(2);
+    resultPriceEther = new Intl.NumberFormat().format(priceEther);
 }
 
 

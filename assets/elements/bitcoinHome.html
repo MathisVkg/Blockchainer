@@ -30,13 +30,36 @@
         <img src="../img/bitcoin.svg" alt="bitcoin" class="logo">
         <div class="namePrice">
             <h2 class="bitcoinTitle" id="title">Bitcoin</h2>
-            <p class="price" id="priceTarget"></p>
+            <p class="price priceDark" id="priceTarget"></p>
         </div>
     </div>
-    <div class="containerBlock" id="containerTargetOne">
-        <h2 class="titleBlock">All time</h2>
+    <div class="containerTitle">
+        <h2 class="titleBlock titleBlockDark" id="titleBlockTarget">All time</h2>
+        <h2 class="titleBlock titleBlockDark marginTitle" id="titleBlockTarget2">Meenpool</h2>
     </div>
-
+    <div class="containerAll">
+        <div class="containerBlock containerBlockWhite" id="containerTargetOne">
+            <div class="titleInfo">
+                <p class="blockText">Blockchain size</p>
+                <p class="blockText">Network nodes</p>
+                <p class="blockText">Latest block</p>
+                <p class="blockText">Difficulty</p>
+                <p class="blockText">Next estimed difficulty</p>
+            </div>
+            <div class="textData" id="textData"></div>
+        </div>
+        <div class="containerMeenpool">
+            <div class="titleInfo">
+                <p class="blockText">Transactions</p>
+                <p class="blockText">Transactions per second</p>
+                <p class="blockText">Outputs</p>
+                <p class="blockText">Feez</p>
+                <p class="blockText">Size</p>
+            </div>
+            <div class="textData" id="textMeenpool"></div>
+        </div>
+    </div>
+        
 
     <script src="../js/cryptoPage/bitcoinHome.js"></script>
     <script src="https://kit.fontawesome.com/9c212cc3e9.js" crossorigin="anonymous"></script>
