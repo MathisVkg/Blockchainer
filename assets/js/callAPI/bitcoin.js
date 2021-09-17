@@ -2,9 +2,9 @@
 
 const APIURLBITCOIN = 'https://api.blockchair.com/bitcoin/stats';
 let bitcoin = document.getElementById('bitcoinTarget');
-let stockBitcoin;
 let convertedPriceBitcoin;
 let priceBitcoin;
+let stockBitcoin;
 
 
 function getBitcoin() {

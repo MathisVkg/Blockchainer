@@ -1,12 +1,19 @@
 .blockOne {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin-left: 150px;
   margin-top: 3%;
 }
 
 .blockOne .namePrice {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   margin-left: 10px;
 }
 

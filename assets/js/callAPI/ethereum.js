@@ -2,10 +2,9 @@
 
 const APIURLETHEREUM = 'https://api.blockchair.com/ethereum/stats';
 let ethereum = document.getElementById('ethereumTarget');
-let stockEthereum;
 let convertedPriceEthereum;
 let priceEther;
-
+let stockEthereum;
 
 function getEthereum() {
     fetch(APIURLETHEREUM)

@@ -24,7 +24,7 @@ body {
     position: fixed;
     font-size: 1.2em;
     top: 20px;
-    left: 1870px;
+    left: 96%;
     transition: 0.3s ease-in-out;
 }
 .blackHover {
@@ -70,12 +70,12 @@ body {
     top: 0;
     left: 0;
     height: 100vh;
-    transform: translateX(-100%);
+    transform: translateX(-150%);
     transition: 0.3s ease-in-out;
 }
 
 nav {
-    width: 12%;
+    width: 20%;
     .fa-angle-left {
         font-size: 1.5em;
         margin-left: 195px;

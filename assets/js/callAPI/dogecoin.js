@@ -2,9 +2,9 @@
 
 const APIURLDOGECOIN = 'https://api.blockchair.com/dogecoin/stats';
 let dogecoin = document.getElementById('dogecoinTarget');
-let stockDogecoin;
 let convertedPriceDogecoin;
 let priceDogecoin;
+let stockDogecoin;
 
 
 function getDogecoin() {

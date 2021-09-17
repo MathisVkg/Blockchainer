@@ -1,17 +1,26 @@
 .coinBlock {
   color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   width: 280px;
   background-color: #464545;
-  box-shadow: 0 0 15px #292929bf;
+  -webkit-box-shadow: 0 0 15px #292929bf;
+          box-shadow: 0 0 15px #292929bf;
   border-radius: 12px;
   padding: 12px 25px;
   margin: 10px;
+  -webkit-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
 }
 
 .coinBlock .square {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin-bottom: 15px;
 }
@@ -29,8 +38,12 @@
 }
 
 .coinBlock .blocksInfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .coinBlock .blocksInfo .block {
@@ -45,8 +58,12 @@
 }
 
 .coinBlock .transacInfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .coinBlock .transacInfo .transac {
@@ -61,8 +78,12 @@
 }
 
 .coinBlock .blockchainSize {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .coinBlock .blockchainSize .blockSize {
@@ -77,8 +98,10 @@
 }
 
 .coinBlock:hover {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#48c6ef), to(#6f86d6));
   background-image: linear-gradient(to top, #48c6ef 0%, #6f86d6 100%);
-  transform: translateY(-5px);
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
 }
 
 .coinBlock:hover .block {
