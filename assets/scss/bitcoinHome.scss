@@ -68,7 +68,7 @@
 .containerMeenpool {
     margin-left: 180px;
     margin-top: 5px;
-    width: 400px;
+    width: 315px;
     display: flex;
     justify-content: space-between;
 }
@@ -130,7 +130,9 @@
 }
 .inputDarkOff {
     background-color: #303030;
+    color: white;
 }
 .inputDarkOn {
     background-color: white;
+    color: black;
 }

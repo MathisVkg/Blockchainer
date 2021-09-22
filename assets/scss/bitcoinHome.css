@@ -95,7 +95,7 @@
 .containerMeenpool {
   margin-left: 180px;
   margin-top: 5px;
-  width: 400px;
+  width: 315px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -180,9 +180,11 @@
 
 .inputDarkOff {
   background-color: #303030;
+  color: white;
 }
 
 .inputDarkOn {
   background-color: white;
+  color: black;
 }
 /*# sourceMappingURL=bitcoinHome.css.map */

@@ -30,7 +30,7 @@ input.addEventListener('keypress', (event) => {
             stockPriceConverter = input.value / priceBitcoin;
             stockPriceConverter = stockPriceConverter.toFixed(8);
             inputValue.innerHTML = stockPriceConverter + ' Bitcoin';
-        }, 500)   
+        }, 500);  
     }
 })
 
@@ -52,10 +52,12 @@ moon.addEventListener('click', () => {
 menu.addEventListener('click', () => {
     nav.classList.remove('off');
     nav.classList.add('on');
+    document.body.style.marginLeft = '120px';
 })
 menuClose.addEventListener('click', () => {
     nav.classList.remove('on');
     nav.classList.add('off');
+    document.body.style.marginLeft = '0';
 })
 function getColorOn() {
     document.body.style.backgroundColor = '#303030';
