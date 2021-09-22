@@ -26,16 +26,24 @@
         </div>
     </nav>
     <i class="blackHover fas fa-moon" id="darkModeMoon"></i>
-    <div class="blockOne">
-        <img src="../img/bitcoin.svg" alt="bitcoin" class="logo">
-        <div class="namePrice">
-            <h2 class="bitcoinTitle" id="title">Bitcoin</h2>
-            <p class="price priceDark" id="priceTarget"></p>
+    <div class="topInfo">
+        <div class="blockOne">
+            <img src="../img/bitcoin.svg" alt="bitcoin" class="logo">
+            <div class="namePrice">
+                <h2 class="bitcoinTitle" id="title">Bitcoin</h2>
+                <p class="price priceDark" id="priceTarget"></p>
+            </div>
+        </div>
+        <div class="containerInput containerWalletOff" id="containerWallet">
+            <p class="inputTitle">Wallet Converter</p>
+            <p class="inputSubTitle">Convert your wallet in Bitcoin</p>
+            <input type="text" id="inputTarget" placeholder="Your wallet" class="inputDarkOff">
+            <p class="inputValue" id="inputValue"></p>
         </div>
     </div>
     <div class="containerTitle">
         <h2 class="titleBlock titleBlockDark" id="titleBlockTarget">All time</h2>
-        <h2 class="titleBlock titleBlockDark marginTitle" id="titleBlockTarget2">Meenpool</h2>
+        <h2 class="titleBlock titleBlockDark marginTitle" id="titleBlockTarget2">Mempool</h2>
     </div>
     <div class="containerAll">
         <div class="containerBlock containerBlockWhite" id="containerTargetOne">
@@ -48,7 +56,7 @@
             </div>
             <div class="textData" id="textData"></div>
         </div>
-        <div class="containerMeenpool">
+        <div class="containerMeenpool containerBlockWhite" id="containerTargetTwo">
             <div class="titleInfo">
                 <p class="blockText">Transactions</p>
                 <p class="blockText">Transactions per second</p>

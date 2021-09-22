@@ -3,6 +3,7 @@
 const APIURLBITCOIN = 'https://api.blockchair.com/bitcoin/stats';
 let price = document.getElementById('priceTarget');
 let containerOne = document.getElementById('containerTargetOne');
+let containerTwo = document.getElementById('containerTargetTwo');
 let moon = document.getElementById('darkModeMoon');
 let title = document.getElementById('title');
 let menu = document.getElementById('menuTarget');
@@ -12,12 +13,26 @@ let blockTextData = document.getElementById('textData');
 let titleBlock = document.getElementById('titleBlockTarget');
 let titleBlock2 = document.getElementById('titleBlockTarget2');
 let blockMeenpoolData = document.getElementById('textMeenpool');
+let input = document.getElementById('inputTarget');
+let inputValue = document.getElementById('inputValue');
+let walletTag = document.getElementById('containerWallet');
 let currentEur = 0.85;
 let stockBitcoin;
 let convertedPriceBitcoin;
 let priceBitcoin;
 let resultPriceBitcoin;
 let state = 1;
+
+input.addEventListener('keypress', (event) => {
+    let stockPriceConverter;
+    if(event.key > 47 || event.key < 58) {
+        setInterval(() => {
+            stockPriceConverter = input.value / priceBitcoin;
+            stockPriceConverter = stockPriceConverter.toFixed(8);
+            inputValue.innerHTML = stockPriceConverter + ' Bitcoin';
+        }, 500)   
+    }
+})
 
 
 moon.addEventListener('click', () => {
@@ -53,6 +68,11 @@ function getColorOn() {
 
     nav.classList.remove('navDark');
     nav.classList.add('navWhite');
+
+    input.classList.remove('inputDarkOff');
+    input.classList.add('inputDarkOn');
+    walletTag.classList.remove('containerWalletOff');
+    walletTag.classList.add('containerWalletOn');
     getColorInfoOn();
 }
 function getColorOff() {
@@ -66,6 +86,11 @@ function getColorOff() {
 
     nav.classList.remove('navWhite');
     nav.classList.add('navDark');
+
+    input.classList.remove('inputDarkOn');
+    input.classList.add('inputDarkOff');
+    walletTag.classList.remove('containerWalletOn');
+    walletTag.classList.add('containerWalletOff');
     getColorInfoOff();
 }
 
@@ -80,6 +105,8 @@ function getColorInfoOn() {
 
     containerOne.classList.remove('containerBlockWhite');
     containerOne.classList.add('containerBlockDark');
+    containerTwo.classList.remove('containerBlockWhite');
+    containerTwo.classList.add('containerBlockDark');
 }
 function getColorInfoOff() {
     price.classList.remove('priceWhite');
@@ -92,6 +119,8 @@ function getColorInfoOff() {
 
     containerOne.classList.remove('containerBlockDark');
     containerOne.classList.add('containerBlockWhite');
+    containerTwo.classList.remove('containerBlockDark');
+    containerTwo.classList.add('containerBlockWhite');
 }
 
 
@@ -190,19 +219,43 @@ function getMeenpoolTransac() {
 }
 
 function getMeenpoolPerSec() {
-    let meenPerSec = document.createElement
+    let meenPerSec = document.createElement('p');
+    meenPerSec.classList.add('textData');
+    let stockSize = stockBitcoin.data.mempool_tps;
+    let stockResult = new Intl.NumberFormat().format(stockSize);
+
+    meenPerSec.innerHTML = stockResult;
+    blockMeenpoolData.appendChild(meenPerSec);
 }
 
 function getMeenpoolOutput() {
+    let meenOutput = document.createElement('p');
+    meenOutput.classList.add('textData');
+    let stockSize = stockBitcoin.data.mempool_outputs;
+    let stockResult = new Intl.NumberFormat().format(stockSize);
 
+    meenOutput.innerHTML = stockResult;
+    blockMeenpoolData.appendChild(meenOutput);
 }
 
 function getMeenpoolFeez() {
+    let meenFeez = document.createElement('p');
+    meenFeez.classList.add('textData');
+    let stockSize = Math.floor(stockBitcoin.data.mempool_total_fee_usd);
+    let stockResult = new Intl.NumberFormat().format(stockSize);
 
+    meenFeez.innerHTML = stockResult + ' USD';
+    blockMeenpoolData.appendChild(meenFeez);
+    
 }
 
 function getMeenpoolSize() {
+    let meenSize = document.createElement('p');
+    meenSize.classList.add('textData');
+    let stockSize = Math.round(stockBitcoin.data.mempool_size / 1000000);
 
+    meenSize.innerHTML = stockSize + ' MG';
+    blockMeenpoolData.appendChild(meenSize);
 }
 
 

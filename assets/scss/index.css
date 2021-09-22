@@ -92,7 +92,7 @@ body {
 }
 
 nav {
-  width: 15%;
+  width: 200px;
   z-index: 1;
 }
 
@@ -115,7 +115,7 @@ nav .navButtonLast {
   font-size: 17px;
   text-decoration: none;
   padding: 7px 15px;
-  width: 146px;
+  width: 0;
   border-radius: 4px 0 0 4px;
   -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
@@ -126,7 +126,7 @@ nav .navButton {
   margin-left: 25px;
   font-size: 17px;
   padding: 7px 15px;
-  width: 146px;
+  width: 0;
   border-radius: 4px 0 0 4px;
   -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
@@ -145,6 +145,7 @@ nav .navButton {
 }
 
 .navDark .navButton:hover {
+  width: 8.8em;
   background-color: white;
   color: black;
   -webkit-transform: translateX(-4px);
@@ -156,6 +157,7 @@ nav .navButton {
 }
 
 .navDark .navButtonLast:hover {
+  width: 8.8em;
   background-color: white;
   color: black;
   -webkit-transform: translateX(-4px);
@@ -175,6 +177,7 @@ nav .navButton {
 }
 
 .navWhite .navButton:hover {
+  width: 8.8em;
   background-color: #303030;
   color: white;
   -webkit-transform: translateX(-4px);
@@ -186,6 +189,7 @@ nav .navButton {
 }
 
 .navWhite .navButtonLast:hover {
+  width: 8.8em;
   background-color: #303030;
   color: white;
   -webkit-transform: translateX(-4px);

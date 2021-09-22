@@ -93,3 +93,44 @@
 .containerBlockDark {
     color: white;
 }
+
+
+
+.topInfo {
+    display: flex;
+    justify-content: space-between;
+    .containerInput {
+        display: flex;
+        flex-direction: column;
+        margin-top: 3%;
+        margin-right: 150px;
+        .inputTitle {
+            margin-bottom: 0;
+            font-size: 20px;
+            color: #6f86d6;
+        }
+        .inputSubTitle {
+            margin-top: 5px;
+            font-size: 12px;
+        }
+        input {
+            border: none;
+            border-radius: 6px;
+            padding: 5px 15px;
+        }
+    }
+
+}
+
+.containerWalletOff {
+    color: black;
+}
+.containerWalletOn {
+    color: white;
+}
+.inputDarkOff {
+    background-color: #303030;
+}
+.inputDarkOn {
+    background-color: white;
+}
