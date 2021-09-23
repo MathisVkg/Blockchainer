@@ -75,7 +75,7 @@ body {
 }
 
 nav {
-    width: 15%;
+    width: 200px;
     z-index: 1;
     .fa-angle-left {
         font-size: 1.5em;
@@ -94,7 +94,7 @@ nav {
         font-size: 17px;
         text-decoration: none;
         padding: 7px 15px;
-        width: 146px;
+        width: 0;
         border-radius: 4px 0 0 4px;
         transition: 0.3s ease-in-out;
     }
@@ -103,7 +103,7 @@ nav {
         margin-left: 25px;
         font-size: 17px;
         padding: 7px 15px;
-        width: 146px;
+        width: 0;
         border-radius: 4px 0 0 4px;
         transition: 0.3s ease-in-out;
     }
@@ -116,6 +116,7 @@ nav {
     .navButton {
         color: white;
         &:hover {
+            width: 8.8em;
             background-color: white;
             color: black;
             transform: translateX(-4px);
@@ -124,6 +125,7 @@ nav {
     .navButtonLast {
         color: white;
         &:hover {
+            width: 8.8em;
             background-color: white;
             color: black;
             transform: translateX(-4px);
@@ -138,6 +140,7 @@ nav {
     .navButton {
         color: black;
         &:hover {
+            width: 8.8em;
             background-color: #303030;
             color: white;
             transform: translateX(-4px);
@@ -146,6 +149,7 @@ nav {
     .navButtonLast {
         color: black;
         &:hover {
+            width: 8.8em;
             background-color: #303030;
             color: white;
             transform: translateX(-4px);

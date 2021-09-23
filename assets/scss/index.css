@@ -2,7 +2,6 @@ body {
   font-family: 'Ubuntu', sans-serif;
   background-color: #ffffff;
   margin: 0;
-  -webkit-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
 }
 
@@ -13,12 +12,8 @@ body {
 }
 
 .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
 
 .fa-moon {
@@ -26,13 +21,11 @@ body {
   font-size: 1.2em;
   top: 20px;
   left: 96%;
-  -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
 }
 
 .blackHover {
   color: black;
-  -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
 }
 
@@ -45,7 +38,6 @@ body {
 
 .whiteHover {
   color: white;
-  -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
 }
 
@@ -63,20 +55,13 @@ body {
 }
 
 .on {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   position: fixed;
   top: 0;
   left: 0;
   height: 100vh;
-  -webkit-transform: translateX(0);
-          transform: translateX(0);
-  -webkit-transition: 0.4s ease-in-out;
+  transform: translateX(0);
   transition: 0.4s ease-in-out;
 }
 
@@ -85,14 +70,12 @@ body {
   top: 0;
   left: 0;
   height: 100vh;
-  -webkit-transform: translateX(-150%);
-          transform: translateX(-150%);
-  -webkit-transition: 0.4s ease-in-out;
+  transform: translateX(-150%);
   transition: 0.4s ease-in-out;
 }
 
 nav {
-  width: 15%;
+  width: 200px;
   z-index: 1;
 }
 
@@ -115,9 +98,8 @@ nav .navButtonLast {
   font-size: 17px;
   text-decoration: none;
   padding: 7px 15px;
-  width: 146px;
+  width: 0;
   border-radius: 4px 0 0 4px;
-  -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
 }
 
@@ -126,9 +108,8 @@ nav .navButton {
   margin-left: 25px;
   font-size: 17px;
   padding: 7px 15px;
-  width: 146px;
+  width: 0;
   border-radius: 4px 0 0 4px;
-  -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
 }
 
@@ -145,10 +126,10 @@ nav .navButton {
 }
 
 .navDark .navButton:hover {
+  width: 8.8em;
   background-color: white;
   color: black;
-  -webkit-transform: translateX(-4px);
-          transform: translateX(-4px);
+  transform: translateX(-4px);
 }
 
 .navDark .navButtonLast {
@@ -156,10 +137,10 @@ nav .navButton {
 }
 
 .navDark .navButtonLast:hover {
+  width: 8.8em;
   background-color: white;
   color: black;
-  -webkit-transform: translateX(-4px);
-          transform: translateX(-4px);
+  transform: translateX(-4px);
 }
 
 .navWhite {
@@ -175,10 +156,10 @@ nav .navButton {
 }
 
 .navWhite .navButton:hover {
+  width: 8.8em;
   background-color: #303030;
   color: white;
-  -webkit-transform: translateX(-4px);
-          transform: translateX(-4px);
+  transform: translateX(-4px);
 }
 
 .navWhite .navButtonLast {
@@ -186,20 +167,15 @@ nav .navButton {
 }
 
 .navWhite .navButtonLast:hover {
+  width: 8.8em;
   background-color: #303030;
   color: white;
-  -webkit-transform: translateX(-4px);
-          transform: translateX(-4px);
+  transform: translateX(-4px);
 }
 
 .colorNav {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   background-color: #6f86d6;
   width: 2%;
   height: 100vh;
