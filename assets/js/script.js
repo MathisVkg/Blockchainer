@@ -44,11 +44,13 @@ moon.addEventListener('click', () => {
 menu.addEventListener('click', () => {
     nav.classList.remove('off');
     nav.classList.add('on');
+    document.body.style.marginLeft = '120px';
 })
 
 menuClose.addEventListener('click', () => {
     nav.classList.remove('on');
     nav.classList.add('off');
+    document.body.style.marginLeft = '0';
 })
 
 

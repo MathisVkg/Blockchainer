@@ -74,7 +74,7 @@
 .containerMeenpool {
   margin-left: 180px;
   margin-top: 5px;
-  width: 400px;
+  width: 315px;
   display: flex;
   justify-content: space-between;
 }
@@ -101,5 +101,52 @@
 
 .containerBlockDark {
   color: white;
+}
+
+.topInfo {
+  display: flex;
+  justify-content: space-between;
+}
+
+.topInfo .containerInput {
+  display: flex;
+  flex-direction: column;
+  margin-top: 3%;
+  margin-right: 150px;
+}
+
+.topInfo .containerInput .inputTitle {
+  margin-bottom: 0;
+  font-size: 20px;
+  color: #6f86d6;
+}
+
+.topInfo .containerInput .inputSubTitle {
+  margin-top: 5px;
+  font-size: 12px;
+}
+
+.topInfo .containerInput input {
+  border: none;
+  border-radius: 6px;
+  padding: 5px 15px;
+}
+
+.containerWalletOff {
+  color: black;
+}
+
+.containerWalletOn {
+  color: white;
+}
+
+.inputDarkOff {
+  background-color: #303030;
+  color: white;
+}
+
+.inputDarkOn {
+  background-color: white;
+  color: black;
 }
 /*# sourceMappingURL=bitcoinHome.css.map */
