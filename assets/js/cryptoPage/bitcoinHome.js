@@ -30,7 +30,7 @@ input.addEventListener('keypress', (event) => {
             stockPriceConverter = input.value / priceBitcoin;
             stockPriceConverter = stockPriceConverter.toFixed(8);
             inputValue.innerHTML = stockPriceConverter + ' Bitcoin';
-        }, 500);  
+        }, 500);
     }
 })
 
