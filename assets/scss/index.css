@@ -2,7 +2,11 @@ body {
   font-family: 'Ubuntu', sans-serif;
   background-color: #ffffff;
   margin: 0;
+<<<<<<< HEAD
   transition: 0.5s ease-in-out;
+=======
+  transition: 0.4s ease-in-out;
+>>>>>>> d8b674c1f180ab0050cbda6ab15747d79fc9d37d
 }
 
 .title {
@@ -100,7 +104,11 @@ nav .navButtonLast {
   padding: 7px 15px;
   width: 0;
   border-radius: 4px 0 0 4px;
+<<<<<<< HEAD
   transition: 0.4s ease-in-out;
+=======
+  transition: 0.3s ease-in-out;
+>>>>>>> d8b674c1f180ab0050cbda6ab15747d79fc9d37d
 }
 
 nav .navButton {
@@ -110,7 +118,11 @@ nav .navButton {
   padding: 7px 15px;
   width: 0;
   border-radius: 4px 0 0 4px;
+<<<<<<< HEAD
   transition: 0.4s ease-in-out;
+=======
+  transition: 0.3s ease-in-out;
+>>>>>>> d8b674c1f180ab0050cbda6ab15747d79fc9d37d
 }
 
 .navDark {
